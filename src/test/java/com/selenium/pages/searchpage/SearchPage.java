@@ -1,9 +1,7 @@
-package com.selenium.pages.SearchPage;
+package com.selenium.pages.searchpage;
 
 import com.selenium.pages.basepage.BasePage;
-import com.selenium.steps.SearchTests;
 import org.junit.Assert;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -40,6 +38,7 @@ public class SearchPage extends BasePage {
 
     public void clickSearchIcon() {
         searchIcon.click();
+        wait.forLoading(5);
     }
 
     public void verifySearchResult(String expectedSearchTerm) {

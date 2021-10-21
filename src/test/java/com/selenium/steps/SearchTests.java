@@ -1,12 +1,9 @@
 package com.selenium.steps;
 
-import com.selenium.pages.SearchPage.SearchPage;
-import com.selenium.pages.basepage.BasePage;
+import com.selenium.pages.searchpage.SearchPage;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.junit.Assert;
-import org.openqa.selenium.By;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
