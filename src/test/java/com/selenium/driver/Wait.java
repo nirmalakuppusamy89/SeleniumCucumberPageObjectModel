@@ -40,4 +40,14 @@ public class Wait {
         String timeoutMessage = elementName + " elements were not displayed after " + Integer.toString(timeout) + " seconds.";
         waitUntilCondition(condition, timeoutMessage, timeout);
     }
+
+    public void forceWait(int timeToWait) {
+
+        try {
+            Thread.sleep(timeToWait * 1000L);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+    }
 }

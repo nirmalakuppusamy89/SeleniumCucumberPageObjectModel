@@ -45,6 +45,4 @@ public class SearchTests {
         searchPage.verifySearchResult(expectedSearchTerm);
     }
 
-
-
 }
